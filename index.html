@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyStore | Modern Ecommerce</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+
+</head>
+
+<body>
+ 
+
+
+ 
+  <header class="navbar">
+   
+
+    <div class="logo">🛍️ MyStore</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+
+   <section class="hero" id="hero">
+    
+    <div class="hero-text">
+      <h1>Welcome to <span>MyStore</span></h1>
+      <p>Trendy. Affordable. Just for You.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+  
+  </section>
+  
+ 
+  <section class="categories" id="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category-box">
+        <a href="products.html?category=men-wear" class="category-link">>👔 Men Wear</a></div>
+      <div class="category-box">
+        <a href="products.html?category=women-wear" class="category-link">👗 Women Wear</a></div>
+      <div class="category-box">
+        <a href="products.html?category=kid-wear" class="category-link">🧒 Kids</a></div>
+      <div class="category-box">
+        <a href="products.html?category=watch" class="category-link">⌚ Watches</a></div>
+      <div class="category-box">
+        <a href="products.html?category=shoes" class="category-link">👟 Shoes</a></div>
+      <div class="category-box">
+        <a href="products.html?category=Clothes" class="category-link">🎽 Clothes</a></div>
+    </div>
+  </section>
+  
+
+  
+
+
+  <section class="products" id="products">
+    <h2>🔥 Trending Products</h2>
+    <div class="product-grid">
+      
+      <div class="product-card">
+        <img src="assets/products/nike.jpg" alt="Product" />
+        <h3>Casual Shoes</h3>
+        <p>₹1,299</p>
+        <button class="add-to-cart" data-id="0" data-name="nike shoe" data-price="1299">Add to Cart</button>
+      </div>
+  <div class="product-card">
+    <img src="assets/products/titan.jpg" alt="Titan Watch">
+    <h3>Titan Watch</h3>
+    <p>₹2,999</p>
+    <button class="add-to-cart" data-id="1" data-name="Titan Watch" data-price="2999">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="assets/products/rolex.jpg" alt="Rolex Watch">
+    <h3>Rolex Watch</h3>
+    <p>₹50,000</p>
+    <button class="add-to-cart" data-id="2" data-name="Rolex Watch" data-price="50000">Add to Cart</button>
+  </div>
+</div>
+  </section>
+
+  <script src="cart.js"></script>
+</body>
+</html>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>🛒 RohitCart</h3>
+        <p>Your go-to online store for stylish, affordable fashion for men, women, and kids.</p>
+      </div>
+  
+      <div class="footer-section links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section contact">
+        <h4>Contact Us</h4>
+        <p>Email: <a href="mailto:rohitswarnkar113@gmail.com">rohitswarnkar113@gmail.com</a></p>
+        <p>Phone: +91 7742400558</p>
+      </div>
+  
+      <div class="footer-section social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 RohitCart. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+</html>

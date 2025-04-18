@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 style="text-align:center;">🛒 Your Cart</h1>
+  <div id="cart-container" class="cart-container"></div>
+
+  <script>
+    const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    const container = document.getElementById("cart-container");
+
+    if (cartItems.length === 0) {
+      container.innerHTML = "<p style='text-align:center;'>Your cart is empty.</p>";
+    } else {
+      container.innerHTML = cartItems.map((item, index) => `
+        <div class="cart-item">
+          <p><strong>${item.name}</strong></p>
+          <p>Price: ₹${item.price}</p>
+          <button onclick="removeItem(${index})">Remove</button>
+        </div>
+      `).join("");
+    }
+
+    function removeItem(index) {
+      cartItems.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cartItems));
+      location.reload(); // refresh the page to show updated cart
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - E-commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 20px;
+        }
+        .category-section {
+            display: none;
+            margin: 30px 0;
+        }
+        .product-card {
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        h3 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+        }
+        .back-btn {
+            display: inline-block;
+            margin: 20px 0;
+            text-decoration: none;
+            background: #333;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <a class="back-btn" href="index.html">← Back to Home</a>
+
+    <section class="products">
+        <h2 style="text-align: center;">Our Products</h2>
+        <div id="product-list">
+
+            <!-- Watches Section -->
+            <div id="watch" class="category-section">
+                <h3>Watches</h3>
+                <div class="product-card"><img src="assets/products/titan.jpg" alt="Titan"><p>Titan Watch</p><p>₹6295</p></div>
+                <div class="product-card"><img src="assets/products/rolex.jpg" alt="Rolex"><p>Rolex Watch</p><p>₹50000</p></div>
+                <div class="product-card"><img src="assets/products/samsung.jpg" alt="Samsung"><p>Samsung Galaxy Watch</p><p>₹25000</p></div>
+                <div class="product-card"><img src="assets/products/apple.jpg" alt="Apple"><p>Apple Watch</p><p>₹40000</p></div>
+                <div class="product-card"><img src="assets/products/noise.jpg" alt="Noise"><p>Noise ColorFit</p><p>₹3499</p></div>
+                <div class="product-card"><img src="assets/products/fossil.jpg" alt="Fossil"><p>Fossil Gen 5</p><p>₹8999</p></div>
+                <div class="product-card"><img src="assets/products/boat.jpg" alt="boAt"><p>boAt Xtend</p><p>₹2999</p></div>
+                <div class="product-card"><img src="assets/products/fireboltt.jpg" alt="Fire-Boltt"><p>Fire-Boltt Ninja</p><p>₹2799</p></div>
+                <div class="product-card"><img src="assets/products/amazfit.jpg" alt="Amazfit"><p>Amazfit GTS 2</p><p>₹7999</p></div>
+                <div class="product-card"><img src="assets/products/realme.jpg" alt="Realme"><p>Realme Watch 2</p><p>₹3499</p></div>
+                <div class="product-card"><img src="assets/products/mi.jpg" alt="Mi" ><p>Mi Smart Watch</p><p>₹2299</p></div>
+                <!-- Add more watch items as needed -->
+            </div>
+
+            <!-- Men Wear Section -->
+            <div id="men-wear" class="category-section">
+                <h3>Men Wear</h3>
+                <div class="product-card"><img src="assets/products/polo.jpg" alt="T-shirt"><p>polo T-shirt</p><p>₹499</p></div>
+                <div class="product-card"><img src="assets/products/levis.jpg" alt="Jeans"><p>levis Jeans</p><p>₹899</p></div>
+                <div class="product-card"><img src="assets/products/denim.jpg" alt="Jacket"><p>denim Jacket</p><p>₹1499</p></div>
+                <!-- Add more men wear items as needed -->
+            </div>
+
+            <!-- Women Wear Section -->
+            <div id="women-wear" class="category-section">
+                <h3>Women Wear</h3>
+                <div class="product-card"><img src="assets/products/dress.jpg" alt="Dress"><p>Women's Dress</p><p>₹799</p></div>
+                <div class="product-card"><img src="assets/products/tunic.jpg" alt="Tunic"><p>Women Tunic</p><p>₹1200</p></div>
+                <div class="product-card"><img src="assets/products/top.jpg" alt="Blouse"><p>top</p><p>₹599</p></div>
+                <!-- Add more women wear items as needed -->
+            </div>
+
+            <!-- Shoes Section -->
+            <div id="shoes" class="category-section">
+                <h3>Shoes</h3>
+                <div class="product-card"><img src="assets/products/nike.jpg" alt="Nike"><p>Nike Air</p><p>₹5999</p></div>
+                <div class="product-card"><img src="assets/products/adidas.jpg" alt="Adidas"><p>Adidas Run</p><p>₹6799</p></div>
+                <div class="product-card"><img src="assets/products/reebok.jpg" alt="Reebok"><p>Reebok Classic</p><p>₹4299</p></div>
+                <!-- Add more shoe items as needed -->
+            </div>
+
+            <!-- Kid Wear Section -->
+            <div id="kid-wear" class="category-section">
+                <h3>Kid Wear</h3>
+                <div class="product-card"><img src="assets/products/kid1.jpg" alt="Kid T-shirt"><p>Kid T-shirt</p><p>₹299</p></div>
+                <div class="product-card"><img src="assets/products/kid2.jpg" alt="Kid Jeans"><p>Kid Jeans</p><p>₹499</p></div>
+                <div class="product-card"><img src="assets/products/kid3.jpg" alt="Kid Jacket"><p>Kid Jacket</p><p>₹699</p></div>
+                <!-- Add more kid wear items as needed -->
+            </div>
+            <div id="Clothes" class="category-section">
+              <h3>Clothes</h3>
+                <div class="product-card"><img src="assets/products/polo.jpg" alt="T-shirt"><p>polo T-shirt</p><p>₹499</p></div>
+                <div class="product-card"><img src="assets/products/levis.jpg" alt="Jeans"><p>levis Jeans</p><p>₹899</p></div>
+                <div class="product-card"><img src="assets/products/denim.jpg" alt="Jacket"><p>denim Jacket</p><p>₹1499</p></div>
+                <div class="product-card"><img src="assets/products/dress.jpg" alt="Dress"><p>Women's Dress</p><p>₹799</p></div>
+                <div class="product-card"><img src="assets/products/tunic.jpg" alt="Tunic"><p>Women Tunic</p><p>₹1200</p></div>
+                <div class="product-card"><img src="assets/products/top.jpg" alt="Blouse"><p>top</p><p>₹599</p></div>
+                <div class="product-card"><img src="assets/products/kid1.jpg" alt="Kid T-shirt"><p>Kid T-shirt</p><p>₹299</p></div>
+                <div class="product-card"><img src="assets/products/kid2.jpg" alt="Kid Jeans"><p>Kid Jeans</p><p>₹499</p></div>
+                <div class="product-card"><img src="assets/products/kid3.jpg" alt="Kid Jacket"><p>Kid Jacket</p><p>₹699</p></div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Function to get URL parameter value
+        function getQueryParam(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        const category = getQueryParam('category');
+
+        function showCategory(category) {
+            const allSections = document.querySelectorAll('.category-section');
+            allSections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            const selectedCategory = document.getElementById(category);
+            if (selectedCategory) {
+                selectedCategory.style.display = 'block';
+            }
+        }
+
+        // Show category based on the query parameter
+        if (category) {
+            showCategory(category);
+        } else {
+            document.getElementById('product-list').innerHTML = '<p style="text-align:center;">Please select a category!</p>';
+        }
+    </script>
+
+</body>
+</html>
